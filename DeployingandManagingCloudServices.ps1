@@ -77,8 +77,3 @@ Remove-AzureCertificate -ServiceName $newCloudServiceName -Thumbprint $pfxCertif
 # Remove a cloud service
 Remove-AzureService -ServiceName $newCloudServiceName -Force
 
-
-
-
-
-
