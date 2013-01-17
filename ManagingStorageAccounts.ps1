@@ -4,7 +4,7 @@
 Get-AzureStorageAccount
 
 # Specify a existing storage accont name
-$storageAccount = "azuresupport"
+$storageAccount = "an_existing_storage_account"
 
 # Get a speicic storage account
 Get-AzureStorageAccount -StorageAccountName $storageAccount
@@ -16,7 +16,7 @@ Get-AzureStorageAccount | Format-Table -Property StorageAccountName, Location, A
 Get-AzureStorageKey -StorageAccountName $storageAccount
 
 # Create a new Azure storage account
-$newStorageAccountNmae = "azuresupport101"
+$newStorageAccountNmae = "a_new_storage_account"
 New-AzureStorageAccount -StorageAccountName $newStorageAccountNmae -Location "Southeast Asia" -Description "This is a storage acount created via PowerShll cmdlet" -Label "Crated via PowerShell"
 
 # Regenerate Primary or Secondary key for a specific storage account
