@@ -9,7 +9,7 @@ Import-Module "C:\Program Files (x86)\Microsoft SDKs\Windows Azure\PowerShell\Az
 Get-AzurePublishSettingsFile
 
 # Import Windows Azure Publish Setting File
-$publishSettingFilePath = "your_publish_setting_file_path_here"
+$publishSettingFilePath = "your_publish_setting_file_path"
 
 Import-AzurePublishSettingsFile -PublishSettingsFile $publishSettingFilePath
 
@@ -17,5 +17,5 @@ Import-AzurePublishSettingsFile -PublishSettingsFile $publishSettingFilePath
 Get-AzureSubscription
 
 # Select the current Windows Azure Subscription
-$subscriptionName = "your_subscription_name_here"
+$subscriptionName = "your_subscription_name"
 Select-AzureSubscription -SubscriptionName $subscriptionName
